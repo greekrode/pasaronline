@@ -1,10 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);/*!
+/*!
  *   AdminLTE v2.3.8
  *   Author: Almsaeed Studio
  *	 Website: Almsaeed Studio <http://almsaeedstudio.com>
  *   License: Open source - MIT
  *           Please visit http://opensource.org/licenses/MIT for more information
 !*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic);
 /*
  * Core: General Layout Style
  * -------------------------
@@ -46,7 +47,7 @@ body {
   position: relative;
 }
 .layout-boxed {
-  background: url(/images/boxed-bg.jpg?7799dece2c79854f63f09e7dfa528b88) repeat fixed;
+  background: url('../../dist/img/boxed-bg.jpg') repeat fixed;
 }
 /*
  * Content Wrapper - contains the main content
@@ -253,7 +254,7 @@ a:focus {
   font-family: fontAwesome;
 }
 .main-header .sidebar-toggle:before {
-  content: "\F0C9";
+  content: "\f0c9";
 }
 .main-header .sidebar-toggle:hover {
   color: #fff;
@@ -340,7 +341,7 @@ a:focus {
   margin-right: 5px;
 }
 .content-header > .breadcrumb > li + li:before {
-  content: '>\A0';
+  content: '>\00a0';
 }
 @media (max-width: 991px) {
   .content-header > .breadcrumb {
@@ -1165,36 +1166,36 @@ a:focus {
  the class .animated-dropdown-menu to the .dropdown-menu ul (or ol)*/
 .open:not(.dropup) > .animated-dropdown-menu {
   -webkit-backface-visibility: visible !important;
-          backface-visibility: visible !important;
+  backface-visibility: visible !important;
   -webkit-animation: flipInX 0.7s both;
   animation: flipInX 0.7s both;
 }
 @keyframes flipInX {
   0% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-            transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
     opacity: 0;
   }
   40% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
-            transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     -webkit-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
   }
   60% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
-            transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
   80% {
     -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
-            transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
   }
   100% {
     -webkit-transform: perspective(400px);
-            transform: perspective(400px);
+    transform: perspective(400px);
   }
 }
 @-webkit-keyframes flipInX {
@@ -4879,8 +4880,8 @@ fieldset[disabled] .btn-yahoo.active {
 .select2-results__option {
   padding: 6px 12px;
   -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-user-select: none;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -5567,3 +5568,5 @@ label,
 .error-page {
   background-color: #ecf0f5;
 }
+
+/*# sourceMappingURL=adminlte-app.css.map */

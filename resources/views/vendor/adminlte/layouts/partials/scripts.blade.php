@@ -5,6 +5,18 @@
 <script src="{{ asset('/js/all.js') }}" type="text/javascript"></script>
 <script src="{{ mix('/js/app.js') }}" type="text/javascript"></script>
 
+<script type="text/javascript">
+    $(function () {
+	    $("#data").dataTable();
+  });
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+	    $('dropdown-toggle').dropdown("toggle");
+	});
+</script>
+
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the

@@ -31,6 +31,9 @@ Route::get('/salesdetail', function () {
     return view('salesdetail');
 });
 
+Route::get('/home',function(){
+    return view ('home');
+});
 
 Route::get('/order', function () {
     return view('order');
@@ -58,4 +61,8 @@ Route::get('/cart', function () {
 
 Route::get('/detail', function () {
     return view('detail');
+});
+
+Route::get('/table', function () {
+    return view('table');
 });
